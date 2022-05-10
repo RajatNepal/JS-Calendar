@@ -1,12 +1,12 @@
 # CSE330
 
-Anton Dmitriev / 485865 / AntonDmitriev1484
-
 Rajat Nepal / 490732 / RajatNepal
 
-Link to calendar website: http://ec2-44-203-76-180.compute-1.amazonaws.com/~antond/m5_group/client/html/calendar.html
+Anton Dmitriev / 485865 / AntonDmitriev1484
 
-Rajat's link: http://ec2-54-159-121-198.compute-1.amazonaws.com/~rnepal/m5_group/client/html/calendar.html
+
+
+Link to calendar website: EC2 instance is shut down. Email me to have it restarted to use website.
 
 
 Login Details (both links have these users):
