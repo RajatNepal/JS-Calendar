@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calendar</title>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="../js/main.js" ></script>
+    <link rel="stylesheet" href="../css/calendar.css">
+</head>
+
+<body>
+    <div id="siteContainer">
+        <div id ="mainContent">
+            <div id="divAccount">
+                <div id="divLogin">
+                    <p>You are currently in guest mode..</p>
+                    <p>Please log in to view and update your calendar. </p>
+                    Username: <input type="text" id="inLoginUsrnm"/><br/>
+                    Password: <input type="password" id="inLoginPswd"/><br/>
+                    <input type="submit" id="btnLoginSubmit" value="Log in" /><br/>
+                </div>
+                <div id="divRegister">
+                    <p>Create an Account</p>
+                    Username: <input type="text" id="inRegisterUsrnm"/><br/>
+                    Password: <input type="password" id="inRegisterPswd"/><br/>
+                    <input type="submit" id="btnRegisterSubmit" value="Sign up" /><br/>
+                </div>  
+                <div id="divLogout">
+                    <p id="pWelcome"></p>
+                    <input type="submit" id="btnLogoutSubmit" value="Log out"/>
+                </div>
+            </div>
+            
+            <div id="divCal">
+                <div id="divCalBody">
+                    <h3 id="headerCal"></h3>
+                    <table id="tableCal">
+        
+                        
+                    </table>
+                </div>
+                <button id="btnCalBodyPre" >Previous Month</button>
+                <button id="btnCalBodyNext" >Next Month</button>
+            </div>
+        
+            <div id="divEventList">
+                <h4>Events</h4>
+               
+                <table id="tableEventList">
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+        
+            <div id="divEventAdd">
+                <h4>Add Event</h4>
+                Title: <input type="text" id="inEventAddTitle"/><br/>
+                Date: <input type="date" id="inEventAddDate"/><br/>
+                Time: <input type="time" id="inEventAddTime"/><br/>
+                Tag: <br/>
+                <input type="radio" name="radioAddTag" id="radioAddTagP" value="personal"> Personal
+                <input type="radio" name="radioAddTag" id="radioAddTagA" value="academic"> Academic
+                <input type="radio" name="radioAddTag" id="radioAddTagW" value="work"> Work 
+                <input type="radio" name="radioAddTag" id="radioAddTagH" value="holiday"> Holiday 
+                <input type="radio" name="radioAddTag" id="radioAddTagB" value="birthday"> Birthday <br/>
+                <input type="submit" id="btnEventAddSubmit" value="Add"/>
+            </div> 
+        
+            <div id="divEventEdit">
+        
+            </div>
+        
+            <div id = "csrf-display"></div>
+        </div>
+        <div id="groupContent">
+            <div id="divGroups">
+
+                <div id = "allGroupsWrapper">
+                    <p id="pAllGroups"></p>
+                </div>
+
+                <div id = "userInGroupsWrapper">
+
+                    <p id="pUserInGroups"></p>
+                </div>
+
+                <div id = "userOwnsGroupsWrapper">
+
+                    <p id="pUserOwnsGroups"></p>
+                </div>
+                
+                <div id="divCEDGroups">
+                
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
